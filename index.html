@@ -1,0 +1,214 @@
+index.html```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dulces Emelis</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#fff8f5;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:white;
+    color:#ff6b81;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+nav{
+    background:#ff6b81;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+section{
+    padding:50px 10%;
+}
+
+h2{
+    text-align:center;
+    color:#ff6b81;
+    margin-bottom:30px;
+}
+
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+
+.card h3{
+    color:#ff6b81;
+    margin-bottom:10px;
+}
+
+.precio{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#28a745;
+    margin:15px 0;
+}
+
+.comprar{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#ff6b81;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+.comprar:hover{
+    background:#ff4f70;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍰 Dulces Emelis</h1>
+    <p>Postres artesanales deliciosos y económicos</p>
+    <a href="#productos" class="btn">Ver Productos</a>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="productos">
+    <h2>Nuestros Sabores</h2>
+
+    <div class="productos">
+
+        <div class="card">
+            <h3>Postre de Oreo</h3>
+            <p>Delicioso postre cremoso con galletas Oreo.</p>
+            <div class="precio">$3.500 COP</div>
+            <button class="comprar" onclick="window.open('https://wa.me/573114067466?text=Hola,%20quiero%20comprar%20un%20Postre%20de%20Oreo')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <h3>Postre de Maracuyá</h3>
+            <p>Refrescante sabor tropical de maracuyá.</p>
+            <div class="precio">$3.500 COP</div>
+            <button class="comprar" onclick="window.open('https://wa.me/573114067466?text=Hola,%20quiero%20comprar%20un%20Postre%20de%20Maracuyá')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <h3>Postre Tres Leches</h3>
+            <p>Clásico postre suave y esponjoso.</p>
+            <div class="precio">$3.500 COP</div>
+            <button class="comprar" onclick="window.open('https://wa.me/573114067466?text=Hola,%20quiero%20comprar%20un%20Postre%20Tres%20Leches')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <h3>Postre de Mango</h3>
+            <p>El sabor dulce y fresco del mango.</p>
+            <div class="precio">$3.500 COP</div>
+            <button class="comprar" onclick="window.open('https://wa.me/573114067466?text=Hola,%20quiero%20comprar%20un%20Postre%20de%20Mango')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <h3>Postre de Guanábana</h3>
+            <p>Cremoso y delicioso sabor natural.</p>
+            <div class="precio">$3.500 COP</div>
+            <button class="comprar" onclick="window.open('https://wa.me/573114067466?text=Hola,%20quiero%20comprar%20un%20Postre%20de%20Guanábana')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <h3>Postre de Café</h3>
+            <p>Perfecto para los amantes del café.</p>
+            <div class="precio">$3.500 COP</div>
+            <button class="comprar" onclick="window.open('https://wa.me/573114067466?text=Hola,%20quiero%20comprar%20un%20Postre%20de%20Café')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <h3>Postre de Frutos Rojos</h3>
+            <p>Combinación de sabores dulces y frutales.</p>
+            <div class="precio">$3.500 COP</div>
+            <button class="comprar" onclick="window.open('https://wa.me/573114067466?text=Hola,%20quiero%20comprar%20un%20Postre%20de%20Frutos%20Rojos')">Comprar</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align:center;">
+        📱 WhatsApp: 311 406 7466<br>
+        📧 santiagoalgerian@gmail.com<br>
+        📍 Colombia
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Dulces Emelis - Postres artesanales deliciosos y económicos.</p>
+</footer>
+
+</body>
+</html>
+```
